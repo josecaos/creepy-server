@@ -17,7 +17,7 @@
         for ($i=0; $i <6 ; $i++):
 
           ?>
-          <h1>Welcome to Creepy Server</h1>
+          <h1><small>Welcome to Creepy Server</small></h1>
           <?php
         endfor;
 
