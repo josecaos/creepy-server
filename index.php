@@ -11,22 +11,22 @@
   <div class="grid-container">
     <div class="row grid-padding-y align-middle">
 
-      <div class="columns cell h-a text-center">
-        <?php
+      <?php
 
-        for ($i=0; $i <6 ; $i++):
-
-          ?>
-          <h1><small>Welcome to Creepy Server</small></h1>
-          <?php
-        endfor;
+      // for ($i=0; $i <2 ; $i++):
 
         ?>
+      <div class="columns cell h-a text-center">
+          <h1><small>Welcome to Creepy Server</small></h1>
 
         <p class="grid-x grid-padding-y grid-padding-x texto-init"></p>
 
 
       </div>
+      <?php
+    // endfor;
+
+    ?>
 
     </div>
 
