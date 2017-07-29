@@ -5,6 +5,8 @@
 
 body {
 
+  height: 100vh;
+
     background-color: #222 ;
     font-family: 'VT323', monospace;
     color: whitesmoke;
@@ -15,4 +17,12 @@ body {
     color: gray;
 }
 
+}
+
+div {
+  height: 100%;
+}
+
+.h-a {
+  height: auto;
 }

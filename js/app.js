@@ -2,22 +2,26 @@ $(document).foundation();
 
 $(document).ready(function () {
 
+	var t = 1000
 
-	setTimeout(function (){
+	setTimeout(function (){//quieto
 
 		var i = 0
-		var t = 1000
 
-		setInterval(function() {
+		setInterval(function() {//cambia palabras
 
-			i = i + 1
-			texto_init();
-			t = t - i
-console.log(i)	
-console.log(t)
-	},t)
+			if (! i == 10) {
+				i = 0
+			} else {
 
-	},2000)
+				i = i + 1
+				texto_init()
+				t = t - i
+			}
+
+		},t)
+
+	},t+1000)
 
 });
 
@@ -32,21 +36,21 @@ function texto_init() {
 	var b = a.join(" ")
 
 	setTimeout(function() {
-	$('h1').html(b)
+		$('h1').html(b)
 	},450)
 
 
 }
 
 function shuffle (array) {
-  var i = 0
-    , j = 0
-    , temp = null
+	var i = 0
+	, j = 0
+	, temp = null
 
-  for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1))
-    temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
-  }
+	for (i = array.length - 1; i > 0; i -= 1) {
+		j = Math.floor(Math.random() * (i + 1))
+		temp = array[i]
+		array[i] = array[j]
+		array[j] = temp
+	}
 }
